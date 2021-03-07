@@ -6,7 +6,7 @@ public class Main {
         int pinCode = -1;
 
         Scanner scanner = new Scanner(System.in); // lecture des données depuis la console
-        while (pinCode != secretPinCode) {
+        while (pinCode != secretPinCode) { // le cycle entre demarre avec la NON compatibilité du mot de passe
             if (pinCode == -1) {
                 System.out.println("Entrez le mot de passe:");
             } else {
