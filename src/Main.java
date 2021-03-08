@@ -6,11 +6,11 @@ public class Main {
         int pinCode = -1;
 
         Scanner scanner = new Scanner(System.in); // lecture des données depuis la console
-        while (pinCode != secretPinCode) { // le cycle entre demarre avec la NON compatibilité du mot de passe
+        while (pinCode != secretPinCode) { // le cycle demarre avec la NON compatibilité du mot de passe
             if (pinCode == -1) {
                 System.out.println("Entrez le mot de passe:");
             } else {
-                System.out.println("Erreur de mot de passe. Essayez encore:");
+                System.out.println("Le mot de passe incorrect. Essayez encore:");
             }
             pinCode = scanner.nextInt();
         }
